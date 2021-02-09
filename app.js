@@ -6,6 +6,6 @@ app.use(express.static('public'));
 app.use(express.static('files'));
 app.use(compression());
 
-app.listen(80, function(){
+app.listen(process.env.PORT || 80, function(){
     console.log("webserver listening!");
 });
